@@ -27,7 +27,7 @@ pipeline {
 
         stage('Serve App') {
             steps {
-                bat 'npx serve -s build -l 5173'
+                bat 'start /B npx serve -s dist -l 5173'
             }
         }
 
