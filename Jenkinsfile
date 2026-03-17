@@ -25,11 +25,11 @@ pipeline {
             }
         }
 
-        stage('Serve App') {
-            steps {
-                bat 'start /B npx serve -s dist -l 5173'
-            }
-        }
+       stage('Deploy') {
+    steps {
+        bat 'xcopy dist C:\\deploy\\frontend /E /I /Y'
+    }
+}
 
     }
 }
