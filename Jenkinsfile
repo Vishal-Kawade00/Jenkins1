@@ -27,7 +27,7 @@ pipeline {
 
         stage('Serve App') {
             steps {
-                bat 'npx serve -s build -l 3000'
+                bat 'npx serve -s build -l 5173'
             }
         }
 
